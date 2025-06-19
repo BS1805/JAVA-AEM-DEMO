@@ -1,0 +1,39 @@
+.cmp-article {
+    transition: background 0.3s, box-shadow 0.3s;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.cmp-article--highlight {
+    background: #e0f7fa;
+    box-shadow: 0 4px 12px rgba(0,150,136,0.15);
+}
+.cmp-article__author {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.cmp-article__content {
+    line-height: 1.6;
+    color: #444;
+}
+
+.cmp-article__content p {
+    margin-bottom: 1rem;
+}
+
+
+.cmp-article__title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+.cmp-article__title:hover {
+    color: #009688;
+}

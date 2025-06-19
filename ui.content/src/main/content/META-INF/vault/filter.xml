@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/greencity" mode="merge"/>
+    <filter root="/content/greencity" mode="merge"/>
+    <filter root="/content/dam/greencity" mode="merge">
+        <exclude pattern="/content/dam/greencity(/.*)?"/>
+        <include pattern="/content/dam/greencity/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/greencity/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/greencity" mode="merge"/>
+</workspaceFilter>

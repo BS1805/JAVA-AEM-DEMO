@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='greencity.article'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='greencity.article'}"/>
+</sly>
+
+<sly data-sly-use.model="com.greencity.core.models.Article"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+<p> Hello!</p>
+    <div class="cmp-article" data-sly-test.hasContent="${model.title || model.author || model.article}">
+        <h2 class="cmp-article__title" data-sly-test="${model.title}">${model.title}</h2>
+        <p class="cmp-article__author" data-sly-test="${model.author}">By ${model.author}</p>
+        <div class="cmp-article__content" data-sly-test="${model.article}">${model.article @ context='html'}</div>
+    </div>
+    <sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-article'}"></sly>
+</sly>
