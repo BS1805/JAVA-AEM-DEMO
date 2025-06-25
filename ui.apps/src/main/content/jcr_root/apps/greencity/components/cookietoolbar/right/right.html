@@ -1,0 +1,9 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='greencity.cookietoolbar'}"/>
+</sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" />
+<div class="cmp-cookietoolbar__right-container">
+    <button data-sly-test="${properties.button1Label}">${properties.button1Label}</button>
+    <button data-sly-test="${properties.button2Label}">${properties.button2Label}</button>
+    <sly data-sly-call="${templates.placeholder @ isEmpty=!properties.button1Label && !properties.button2Label}" />
+</div>
