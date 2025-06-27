@@ -17,11 +17,21 @@
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                             fieldLabel="Button 1 Label"
                             name="./button1Label"/>
+                    <button1Color
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                            fieldLabel="Button 1 Color"
+                            name="./button1Color"/>
                     <button2Label
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                             fieldLabel="Button 2 Label"
                             name="./button2Label"/>
+                    <button2Color
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                            fieldLabel="Button 2 Color"
+                            name="./button2Color"/>
                 </items>
             </fields>
         </items>
